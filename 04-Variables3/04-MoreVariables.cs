@@ -39,6 +39,9 @@ namespace ProgrammingExercisesIST
 
 
             // Do not edit below this line
+            int year = 2016;
+            string country = "china";
+            double population = 1.379;
             Console.WriteLine($"As of {year} the population of {country} was {population} billion.");
             Console.ReadLine();
         }
