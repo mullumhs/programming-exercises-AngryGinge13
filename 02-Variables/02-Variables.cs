@@ -34,8 +34,10 @@ namespace ProgrammingExercisesIST
         static void Main(string[] args)
         {
             // Your code goes below here
-            
-
+            String Name = "Messi ";
+            String Name2 = "10";
+            Console.WriteLine(Name + "is COMMINNGG!!" + Name2);
+            Console.ReadLine();
         }
     }
 }
