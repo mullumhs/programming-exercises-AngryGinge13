@@ -44,7 +44,12 @@ namespace ProgrammingExercisesIST
         static void Main(string[] args)
         {
             // Your code goes below here
-
+            int Name = 12;
+            double Name2 = 0.1;
+            bool Name3 = true;
+            Console.WriteLine(Name + " is my number " + Name2 + " is your number " + Name3 + " cus you a 0.1 ");
+            Console.ReadLine();
+            
         }
     }
 }
