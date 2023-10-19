@@ -39,7 +39,14 @@ namespace ProgrammingExercisesIST
         static void Main(string[] args)
         {
             // Your code goes below here
+            String name = Console.ReadLine();
+            Console.WriteLine($" i like WHIPing  {name}");
+            Console.ReadLine();
 
+
+
+            
+           
         }
     }
 }
