@@ -40,7 +40,7 @@ namespace ProgrammingExercisesIST
         {
             // Your code goes below here
             String name = Console.ReadLine();
-            Console.WriteLine($" i like WHIPing  {name}");
+            Console.WriteLine($" i love to suck {name} by milo");
             Console.ReadLine();
 
 
