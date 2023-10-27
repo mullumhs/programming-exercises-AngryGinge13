@@ -52,7 +52,31 @@ namespace ProgrammingExercisesIST
             Console.Write("Please enter a mark out of 100: ");
             int mark = Convert.ToInt32(Console.ReadLine());
 
+
             // Your code goes below here
+
+            if (mark >= 50)
+            {
+                Console.WriteLine("you Passed!");
+            }
+
+        
+
+            else if (mark <= 50  || mark >= 25)
+            {
+                Console.WriteLine("you Failed loser!");
+            }
+
+
+            else if (mark <= 25)
+             {
+                Console.WriteLine("BRUH R U SHAYAN?");
+            }
+            Console.ReadLine();
+
+
+
+
 
         }
     }
