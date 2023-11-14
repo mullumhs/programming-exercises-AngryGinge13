@@ -68,15 +68,23 @@ namespace ProgrammingExercisesIST
             int y = GetNumber();
 
             // Write your code here
+            Console.WriteLine($"{x} Time {y} = {x * y}");
+            Console.WriteLine("good job you did it ");
 
-            
+
 
             // "Exit" method is called here
             Exit();
         }
 
         // Create your functions here
+        private static int MultiplyNumbers(int x, int y)
+        {
+            return x * y;
+            Console.WriteLine();
 
+
+        }
 
 
         // This is a function I have written to get a number from the user

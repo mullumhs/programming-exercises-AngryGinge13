@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Xml.Schema;
+using System.Xml.Serialization;
 
 /*
 ===============================================================================
@@ -48,8 +50,25 @@ namespace ProgrammingExercisesIST
     class Project_11_AreaCalculator
     {
         static void Main(string[] args)
+
+            
+
         {
             // Your code goes below here
+            Console.WriteLine("Chose an option");
+            Console.WriteLine("1. area of a circle");
+
+            String Choice = Console.ReadLine();
+            if (Choice == "1")
+
+            {
+                Console.Write("radius: ");
+                double radius = Convert.ToDouble(Console.ReadLine());
+                double area = Math.PI * radius;
+                Console.WriteLine($"the area of a circle is {area}");
+
+            }
+          
 
         }
     }
