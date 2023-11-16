@@ -50,6 +50,13 @@ namespace ProgrammingExercisesIST
             string choice = MainMenu();
 
             // Write your code here
+            if (choice == "1")
+            {
+                double km = GetDistance("km");
+                double miles = ConvertKMtoMiles(km);
+                Console.WriteLine($"there is {miles} in Miles");
+
+            }
 
 
             // Wait for key press before exiting
@@ -77,6 +84,11 @@ namespace ProgrammingExercisesIST
             Console.WriteLine("2. Miles to Kilometres");
             string choice = Console.ReadLine();
             return choice;
+        }
+        private static void ConvertKMtoMiles(double km)
+        {
+            double miles = km / 1.6;
+            return miles;
         }
 
         // Waits for the user to press any key
