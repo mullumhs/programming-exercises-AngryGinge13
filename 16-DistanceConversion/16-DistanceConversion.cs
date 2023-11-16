@@ -59,6 +59,15 @@ namespace ProgrammingExercisesIST
             }
 
 
+            if (choice == "2")
+            {
+                double miles = GetDistance("miles");
+                double KM = ConvertMilestoKM(miles);
+                Console.WriteLine($"there is {KM} in kM");
+
+            }
+
+
             // Wait for key press before exiting
             WaitForKeyPress();
         }
@@ -85,10 +94,17 @@ namespace ProgrammingExercisesIST
             string choice = Console.ReadLine();
             return choice;
         }
-        private static void ConvertKMtoMiles(double km)
+        private static double ConvertKMtoMiles(double km)
         {
             double miles = km / 1.6;
             return miles;
+        }
+
+
+        private static double ConvertMilestoKM(double Miles)
+        {
+            double KM = Miles * 1.6;
+            return KM;
         }
 
         // Waits for the user to press any key
