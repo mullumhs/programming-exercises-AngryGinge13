@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Xml.Schema;
 
 /*
 ===============================================================================
@@ -43,10 +44,37 @@ namespace ProgrammingExercisesIST
         static void Main(string[] args)
         {
             // Ask the user to pick a door
-            Console.WriteLine("Pick a Door: 1, 2 or 3");
+            
 
             // Your code goes below here
-          
+            Console.WriteLine("Color (Red, green or blue): ");
+            string color = Console.ReadLine();
+
+
+            if (color == "Red")
+            {
+                Console.WriteLine("you picked the wrong door");
+                
+            }
+
+
+            if (color == "green")
+            {
+                Console.WriteLine("you picked the wrong door");
+
+            }
+
+
+            if (color == "blue")
+            {
+                Console.WriteLine("you picked the Right door");
+
+            }
+            Console.ReadLine();
+
+
+
+
 
         }
     }
