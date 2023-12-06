@@ -57,6 +57,7 @@ namespace ProgrammingExercisesIST
             // Your code goes below here
             Console.WriteLine("Chose an option");
             Console.WriteLine("1. area of a circle");
+            Console.WriteLine("2. perimiter of a rectangle");
 
             String Choice = Console.ReadLine();
             if (Choice == "1")
@@ -68,7 +69,18 @@ namespace ProgrammingExercisesIST
                 Console.WriteLine($"the area of a circle is {area}");
 
             }
-          
+            else if (Choice == "2")
+
+            {
+                Console.Write("width of rectangle");
+                double w = Convert.ToDouble(Console.ReadLine());
+                Console.Write("height of rectangle");
+                double h = Convert.ToDouble(Console.ReadLine());
+                double area = (w * h);
+                Console.WriteLine($"the perimter of the rectangle is{area}");
+
+            }
+
 
         }
     }

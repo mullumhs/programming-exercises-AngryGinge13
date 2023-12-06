@@ -49,11 +49,53 @@ namespace ProgrammingExercisesIST
         static void Main(string[] args)
         {
             // Your code goes below here
+            Console.WriteLine("Chose an option");
+            Console.WriteLine("1. area of a circle");
+            Console.WriteLine("2. Area of  a Rectangle");
+            Console.WriteLine("3. Area of a Triangle");
+
+            String Choice = Console.ReadLine();
+
+
+            if (Choice == "1")
+            {
+                Console.Write("What is the radius? ");
+                double radius = Convert.ToDouble(Console.ReadLine());
+                double area = Math.PI * radius;
+                Console.WriteLine($"the area of a circle is {area}");
+            }
+
+            else if (Choice == "2")
+            {
+                Console.Write("width of rectangle");
+                double w = Convert.ToDouble(Console.ReadLine());
+                Console.Write("height of rectangle");
+                double h = Convert.ToDouble(Console.ReadLine());
+                double area = (w * h);
+                Console.WriteLine($"the area of the rectangle is{area}");
+            }
+
+            else if (Choice == "3")
+            {
+                Console.Write("width of trigangle");
+                double a = Convert.ToDouble(Console.ReadLine());
+                Console.Write("height of triangle");
+                double b = Convert.ToDouble(Console.ReadLine());
+               
+                double area = (a * b);
+                Console.WriteLine($"the area of the triangle is {area / 2}");
+            }
+
+
+
+            Console.ReadKey();
+            
+
+
 
         }
     }
 }
-
 /*
 ===============================================================================
 FEEDBACK AREA: Paste your AI feedback here before submission:
